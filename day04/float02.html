@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+       - 부모 박스는 500*500 
+       
+       - box 3 개를 부모 박스 안에 3등분하여 채우기 ㅁㅁㅁ
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .pBox{
+      width: 500px; height: 500px;
+    }
+
+    .pBox::after{
+      content: "" ; clear: both; display: block;
+    }
+    
+    .box1{
+      /* width: calc(100% / 3) 으로 작성 가능 */
+      width: 33%; height: 500px;
+      background-color: yellow;
+
+      text-align: center; line-height: 500px;
+      float: left;
+    }
+
+    .box2{
+      /* width: calc(100% / 3) 으로 작성 가능 */
+      width: 33%; height: 500px;
+      background-color: green; 
+
+      text-align: center; line-height: 500px;
+      float: left;
+    }
+
+    .box3{
+      /* width: calc(100% / 3) 으로 작성 가능 */
+      width: 33%; height: 500px;
+      background-color: red;
+      text-align: center; line-height: 500px;
+      float: left;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="pBox">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+  </div>
+</body>
+</html>

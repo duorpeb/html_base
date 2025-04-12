@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- color 는 색상 관련 속성 
+     - 색상 지정 방법으로는 이미 지정된 이름을 사용하는 방법과 
+       색상 코드를 이용하는 방법, 색상 팔레트 (RGB, RGBA) 를 이용하는 방법이 있음
+        ㄴ RGBA 에서 A 는 투명도를 의미하며 투명도는 0~1 의 값을 가짐  
+
+     - Web 에서 특정 색상이 맘에 든다면 F12 를 눌러 정보를 확인한 후 색상 코드 가져오면 됨
+
+     - Gradient 는 여러가지 색상 조합을 의미 
+      ㄴ 기본 방향 : 위에서 아래로 진행 
+      ㄴ 형식 : linear-gradient(방향, 색상1, 색상2); 
+      ㄴ 참고 링크 : https://cssgradient.io/
+
+     - 글자 가운데 정렬 text-align : center
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>color.html</title>
+  <style>
+    .color{ 
+      width: 200px; height: 200px; line-height: 200px; font-size: 50px; 
+      text-align: center; color:cadetblue;}
+    .bg-color{ 
+      width: 300px; height:200px; 
+      background: rgb(201,201,208);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, 
+      rgba(218,178,116,1) 30%, rgba(0,212,255,1) 100%);
+    }
+    /* border 는 두께, 모양, 색깔을 다 적어야 함 
+       (e.g., border: 1px solid black;)
+    */
+    .b-color{
+      /*  border: 3px; border-style: solid; border-color:burlywood */
+      font-size: 50px; border: 3px solid burlywood;
+    }
+  </style>
+</head>
+<body>
+  <!-- div 생성 시 div 로 하는 것이 아니라 .class 이름 작성 후 사용 -->
+   <div class="color">글자색</div>
+   <div class="bg-color">배경색</div>
+   <div class="b-color">테두리색</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background-image: url("../../image/배달의민족.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .header{
+      font-family: "Jua", sans-serif; font-weight: 400; font-style: normal;
+      font-size: 25px;
+      text-align: center;
+
+    }
+
+    .menu1, .menu2, .menu3{
+      width:400px; height: 430px;
+      /* background-image: url("../../image/냉면.jpg");
+      background-repeat: no-repeat; */
+      /* background-size: 300px 39; */
+
+      margin: 0 auto;
+      padding-top: 20px;
+      padding-bottom: 40px;
+
+      border: none;   
+    }
+
+    .img1>img, .img2>img, .img3>img{
+      width:400px; height: 230px;
+      
+      border-radius: 10px 10px 0 0;
+
+      vertical-align: middle;
+    }
+
+    /* .pBox>.menu>div:first-child{ } */
+    .m1_cbox, .m2_cbox, .m3_cbox{
+      text-align: center;
+
+      background-color: whitesmoke;
+
+      border-radius: 0 0 10px 10px;
+
+      opacity: 0.8;
+    }
+
+    .m1_a, .m2_a, .m3_a{
+      text-decoration: none; color:rgb(233, 136, 136);
+    }
+
+    /* .pBox>.menun h2:nth-of-type(1) { } 
+       menu div 의 첫번째 h2 태그를 의미하는 굼ㄴ  */
+    h2{
+      margin: 0; padding-top: 5px;
+    }
+
+    @keyframes scale { 
+      from{ transform: scale(1,1); }
+
+      50%{ transform: scale(2,2); }
+
+      to{ transform: scale(1,1); }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 전체 얖, width 와 height 설정할 필요 X -->
+  <div class="pBox">
+    <div class="header">
+      <h1>배달의 민족</h1>
+      <h3>넌 배달할 때 제일 멋있어</h3>
+    </div>
+
+    <!-- 메뉴 1, 메뉴 1 복사해서 4개 더 만들면 됨  -->
+    <div class="menu1">
+      <!-- img1 -->
+      <div class="img1">
+        <img src = "../../image/냉면.jpg">
+      </div>
+      
+      <!-- m1_cbox -->
+      <div class="m1_cbox">
+        <h2 id = "h2">냉면</h2> 
+        <p>주머니가 가벼운 당신의 마음까지 생각한</p><p>착한 가격!</p>
+        <p><del>25,000원</del> 15,000원</p>
+        <a href = "" class = "m1_a"><p>바로 결제</p></a>
+      </div>
+    </div>
+
+    <!-- 메뉴 2 -->
+    <div class="menu2">
+      <!-- img2 -->
+      <div class="img2">
+        <img src = "../../image/떡볶이.jpg">
+      </div>
+      
+      <!-- m2_cbox -->
+      <div class="m2_cbox">
+        <h2>떡볶이</h2> 
+        <p>주머니가 가벼운 당신의 마음까지 생각한</p><p>착한 가격!</p>
+        <p><del>25,000원</del> 15,000원</p>
+        <a href = "" class = "m2_a"><p>바로 결제</p></a>
+      </div>
+    </div>
+
+    <!-- 메뉴 3 -->
+    <div class="menu3">
+      <!-- img3 -->
+      <div class="img3">
+        <img src = "../../image/비빔밥.jpg">
+      </div>
+      
+      <!-- m3_cbox -->
+      <div class="m3_cbox">
+        <h2>비빔밥</h2> 
+        <p>주머니가 가벼운 당신의 마음까지 생각한</p><p>착한 가격!</p>
+        <p><del>25,000원</del> 15,000원</p>
+        <a href = "" class = "m3_a"><p>바로 결제</p></a>
+      </div>
+    </div>   
+  </div> <!-- pbox fin-->
+</body>
+</html>

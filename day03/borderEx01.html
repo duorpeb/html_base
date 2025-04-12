@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>borderEx01.html</title>
+  <style>
+    .box1{ 
+      border: 5px solid black;
+      width:100px; height:100px;
+      text-align: center; line-height: 100px; font-weight: 700;
+      border-bottom: none;
+      border-top-left-radius: 20px; border-top-right-radius: 20px;
+      background-color:aqua;
+      /* text-shadow: [x축] [y축] [흐림정도] [색상]; */
+      box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    }
+    .box2{
+      border: 5px solid black;
+      width:100px; height:100px;
+      text-align: center; line-height: 100px; font-weight: 700;
+      border-top: none;
+      border-bottom :none;
+      background-color:aqua;
+      box-shadow: 200px 200px 500px rgba(0,0,0,0.3);
+      box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    }
+    .box3{
+      border: 5px solid black;
+      width:100px; height:100px;
+      text-align: center; line-height: 100px; font-weight: 700;
+      border-top: none;
+      border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+      background-color:aqua;
+      box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div class="box box 1 box1_1> 처럼 클래스는 여러 개 가능 -->
+  <div class="box1">Box 1</div>
+  <div class="box2">Box 2</div>
+  <div class="box3">Box 3</div>
+</body>
+</html>

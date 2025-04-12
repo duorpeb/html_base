@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>day02</title>
+</head>
+<body>
+  <!-- select 는 제시된 항목 중 하나를 선택하는 태그로 콤보 박스, dropdown 박스 형태로 구성
+  
+       - option 태그를 넣어서 목록을 구성 
+
+       - option value = "값" 형식으로 작성하며 value 에 값이 없다면 공백으로 전송
+
+       - selected 는 checked 와 같은 방식으로 기본 선택값을 결정하고 
+         disabled 사용 가능
+  -->
+  <form action="">
+    <label for = "cp">통신사 선택</label><br>
+    <select name = "company" id = "cp">
+      <option value = "">선택하세요.</option>
+      <option value = "skt">SKT</option>
+      <option value = "kt">KT</option>
+      <option value = "lg">LG</option>
+      <option value = "cheap">알뜰폰</option>
+      <option value = "etc">기타</option>
+    </select>  
+    <input type = "submit" value = "submit"><hr>
+  </form>
+
+  <!-- 예제 (1) : 남/녀 성별을 나타내는 select 생성 -->
+  <form action = "">
+    <p><label for = "cp">성별을 선택하세요</label></p>
+    <select name = "gender" id = "gen">
+      <option value = "male">남성</option>
+      <option value = "female">여성</option>
+    </select>
+    <input type = "submit" value = "submit"><hr>
+  </form>
+</body>
+</html>
+
+
+

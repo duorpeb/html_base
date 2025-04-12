@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>day03</title>
+  <style>
+    #ptag{ color : red; }
+    .A{ font-size : 30px; color: blue;}
+    p{ font-style : italic; }
+    #ptag:hover{ color: blue; }
+    p:nth-child(even){ color:orange}
+    /* 자식 관계 : 부모선택자 > 자식 선택자 (e.g., body>p{}) */
+    /* p.hong{} 은 p#ptag{} 로도 작성 가능  */
+  </style>
+</head>
+
+<!-- 선택자 (Selector) 
+     - 선택자란 요소 (태그/Element) 를 선택하게 하는 이름으로 id 선택자, class 선택자
+       , tag 선택자가 있음 
+
+     - id 선택자는 "#id 명" 으로 사용하고 한 페이지에 1개 혹은 0개 
+
+     - class 선택자는 ".class 명" 으로 사용하고 여러 개 사용 가능하지만 같은 클래스는 
+       같은 선택자 스타일의 영향을 받음 
+
+     - tag 선택자는 "태그명" 으로 사용하고 같은 태그명에 같은 스타일을 적용 
+-->
+
+
+<!-- 가상 클래스 선택자 
+
+     - 가상 클래스 선택자란 어떤 조건이나 상황에서 스타일을 적용하도록 만든 선택자로 
+       앞에 대상 선택자가 나오고 뒤에 가상 클래스 선택자가 나옴
+       
+     - 가상 클래스 선택자는 가상 클래스명으로 사용 (e.g., 대상선택자 :hover)
+
+     - :hover 는 요소에 마우스를 올렸을 때 적용되는 요소 
+
+     - :focus 는 요소가 포커스를 받고 있을 때 적용되는 요소
+
+     - :nth-child(n), :nth-of-type(n) 은 a 번째에 해당하는 요소
+      ㄴ n 이 숫자면 해당 숫자에 해당하는 요소를 의미 
+
+      ㄴ n 이 even 이면 짝수, odd 면 홀수, 3n, 5n-1 등과 같이 사용 가능
+-->
+
+
+<!-- 선택자 조합 
+
+     - 여러 선택자를 이용하여 요소를 선택할 수 있으며 
+       자식 관계는 "부모선택자 > 자식 선택자" 로 사용 (e.g., table > tr )
+
+     - 이 때, 부모 선택자는 바로 위에 있는 부모여야 함 
+
+     - 자손관계는 공백을 사용하여 조상선택자 자손선택자로 사용 (e.g., table td)
+
+     - 형제 관계는 선택자를 붙여서 나열하며 선택자1선택자2 형식으로 사용 
+       (e.g., #ptag.hong, p.hong, div.p)
+       
+     - 형제 관계의 선택자 조합에서 안되는 형식 
+      ㄴ 1) 띄어쓰기가 없어서 구분이 안되는 경우 - divp, .pdiv
+      ㄴ 2) 태그 선택자들로만 구성되어 있는 경우 - divp
+      ㄴ 3) 아이디 선택자가 같은 경우 #input1#input1 (한 요소의 id는 1개)
+
+     - 선택자의 우선 순위 (여러 선택자가 겹쳐져 있는 경우)
+      ㄴ 인라인 스타일 > id 선택자 > 클래스 선택자 > 태그 > 가상 클래스 선택자
+
+      ㄴ 우선 순위가 같은 경우 (클래스 선택자가 여러 개 인 경우) 가장 아래에 있는 것이 적용됨
+-->
+<body>
+  <p id = "ptag" class = "A">Hello, World..!</p>
+  <p class = "A">Hello, World..!</p>
+  <p>Hello, World..!</p>
+  <p>Hello, World..!</p>
+  <p>Hello, World..!</p>
+</body>
+</html>

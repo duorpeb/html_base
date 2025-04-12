@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- text
+     - text 는 글자 정렬 상태를 의미하며 text-indent 는 들여쓰기를 의미 
+
+     - 들여쓰기는 문장에서 첫 문단만 들여쓰기함
+
+     - text-align 은 가로 정렬로 text-align: left, right, center, justify (양쪽) 이 있음
+
+     - text-decoration 은 선 긋기 
+      ㄴ text-decoration : none, underline, overline, line-through (취소선)
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text.html</title>
+  <style>
+    p{
+      text-indent : 20px;
+      text-align : justify;
+    }
+
+    .line1{
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="font"></div>
+  <p class = "line1">
+    Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! 
+    Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! 
+    Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! 
+  </p>
+  <p class = "line2">
+    Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! 
+    Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! 
+    Hello, World! Hello, World! Hello, World! Hello, World! Hello, World!  
+  </p>
+</body>
+</html>

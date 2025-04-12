@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <title>Ex01_1</title>
+  <style>
+    /* 일반적으로 content 에 따라 pBox 가 조절되도록 
+       pBox 의 width, height 를 따로 설정하지 않음
+    */
+    .pBox{
+      width : 500px; height: 35px;
+      border: 3px solid  #ade9c8;
+
+      /* 시계 방향  */
+      border-radius: 20px 20px 20px 20px;
+
+      margin: 0 auto;
+    }
+
+    /* N 글자 div */
+    .linkbox{
+      padding-top: 6px; padding-left: 13px; 
+
+      float: left; 
+    }
+    
+    .linkbox a{
+      font-family: "Black Han Sans", sans-serif; font-style: normal;
+      font-weight: 400; font-size: 23px;
+
+      text-decoration: none; color: #03c75a;
+    }
+
+    /* 검색창 div */
+    .searchbox{
+      padding-top: 3px; padding-left: 10px;
+
+      float: left;
+    }
+
+    .window{
+      width : 350px; height: 25px;
+      border: 0px none; outline: none;
+
+      font-size: 13px;
+    }
+
+    /* icon div */
+    .iconbox {
+      float : right;
+    }
+
+    .keyboard{ 
+      padding-top: 6px; padding-right: 9px;
+
+      float: left;
+    }
+
+    .keyboard a{
+      text-decoration: none; color: gray;
+    }
+
+    .arrow{ 
+      float :left; 
+
+      color: #03c75a;
+
+      padding-top: 7px; padding-right: 7px;
+    }
+
+    .arrow a{ 
+      text-decoration: none; color: gray;
+    }
+    
+    .magnifier{ 
+      float :left;
+
+      height: 35px;
+      /* background-color: #03c75a; */
+      
+      border : none;
+
+      margin-right: 15px;
+      background-color: white;
+    }
+
+    .mag_submit{
+      padding-top: 10px;
+
+      border: none;  color :#03c75a; 
+      background-color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="">
+    <div class="pBox">
+      <div class="linkbox">
+        <a class = "link" href = "https://www.naver.com" target ="_blank">N</a>
+      </div>
+      
+      <div class="searchbox">
+        <input type = "text" class = "window">
+      </div>
+      
+      <div class="iconbox">
+        <div class="keyboard">
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-keyboard" viewBox="0 0 16 16">
+              <path d="M14 5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM2 4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>
+              <path d="M13 10.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm0-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-5 0A.25.25 0 0 1 8.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 8 8.75zm2 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25zm1 2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-5-2A.25.25 0 0 1 6.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 6 8.75zm-2 0A.25.25 0 0 1 4.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 4 8.75zm-2 0A.25.25 0 0 1 2.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 8.75zm11-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-2 0a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm-2 0A.25.25 0 0 1 9.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 9 6.75zm-2 0A.25.25 0 0 1 7.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 7 6.75zm-2 0A.25.25 0 0 1 5.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 5 6.75zm-3 0A.25.25 0 0 1 2.25 6h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5A.25.25 0 0 1 2 6.75zm0 4a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm2 0a.25.25 0 0 1 .25-.25h5.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-5.5a.25.25 0 0 1-.25-.25z"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="arrow">
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+              <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="magnifier">
+          <button type = "submit" class = "mag_submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </form>
+</body>
+</html>

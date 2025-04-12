@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .title{
+      font-size: 38px;
+    }
+    /* width 가 600 이 되면 font-size 가 20px 로 변경 */
+    @media screen and (max-width : 600px) {
+      .title{
+        font-size: 20px;
+      }
+    }
+
+    .mw, .nw{
+      border: 2px solid black;
+    }
+
+    .mw{
+      max-width: 600px;
+    }
+
+    .nw{
+      min-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">
+    <h1>Hellow, World~!!</h1>
+    <h3>font size 변경</h3>
+  </div>
+
+  <div class="mw">
+    max-width 는 Element 가 가질 수 있는 최대 크기의 값으로 
+    화면의 크기가 커지더라도 Element 는 더 커질 수 없음 
+  </div>
+
+  <div class="nw">
+    min-width 는 Element 가 가질 수 있는 최소 크기의 값으로 화면의 크기가 
+    작아지더라도 Element 의 크기는 지정된 크기 이하로 줄어들지 않음
+  </div>
+</body>
+</html>

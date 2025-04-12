@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    body{
+      height: 100vh;
+
+      background-image: url("../../image/zibri_4.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+      margin: 0;
+    }
+    
+    .container1{
+      display: flex;
+      /* space-between 으로 양쪽으로 자동 분할됨 */
+      justify-content: space-between;
+    }
+
+    /* Design */
+    .it1{
+      padding: 0; margin: 0;
+
+      margin-left: 30px;
+
+      font-size: 30px; font-weight: 700;
+    }
+
+      .it1 p{ 
+        padding: 0; margin: 0; text-align: center; 
+        
+        padding-top: 20px;
+      }
+
+
+    .it2{ 
+      display: flex;
+
+      width: 500px;
+      /* it2 의 <p> 를 여백 정렬하기 위하여 justify-content : space-around 를 사용 */
+      justify-content: space-around;
+
+      padding: 10px;
+    }
+
+      .it2 p{ 
+        padding: 0; margin: 0; text-align: center; 
+        
+        padding-top: 20px;
+      }
+
+
+    .it3{
+      position: absolute;
+      top: 50%; left: 50%;
+      transform:translate(-50%,-50%);
+
+      text-align: center;
+    }
+
+      /* Welcome to Front-end World */
+      .writing{
+        text-align: center;
+        vertical-align: middle;
+        font-size: 50px; font-weight: 900;
+      }
+
+      /* Learn More */
+      .btn{
+        width: 300px; height: 50px;
+
+        font-size: 30px; 
+
+        background-color: rgb(142, 231, 142);
+        border-radius: 10px;
+
+        color: white;
+
+        cursor: pointer;
+      }
+  </style>
+
+  
+</head>
+
+<body>
+  <div class = "container1">
+    <!--  -->
+    <div class="item it1"><p style="color: white;">Design</p></div>/div>
+    <div class="item it2" style="color: white;" >
+      <p>Home</p>
+      <p>Login</p>
+      <p>Sing up</p>
+      <p>Board</p>
+    </div>
+  </div>
+  
+
+  <div class = "item3 it3">
+    <p class = "writing" style="color: white;">Welcome to Front-end</p>
+    <p class = "writing" style="color: white;">World</p>
+  
+    <form action=""><input class = "btn" type = "submit" value = "Learn More"></form>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Font 지정 - font-familly
+     - font 는 font-family 로 지정
+
+     - font-family 는 브라우저마다 지원하는 폰트가 달라서 폰트의 묶음으로 설정 
+
+     - 지정하려는 폰트를 , 로 나열
+
+     - 한글 폰트의 경우 한글이름과 영문이름을 같이 사용해야 외국에서도 사용 가능
+
+     - 마지막 폰트는 기본형 (Serif) 로 지정 
+
+     - 폰트명에 띄어쓰기가 있으면 " " / ' ' (따옴표) 로 묶어주어야 함 (e.g.,"나눔 고딕")
+
+     - 참고 링크 : https://fonts.google.com/
+      ㄴ 글꼴 가져오기 → 임베드 코드 받기 
+-->
+
+<!-- Font - font-size/style/weight
+     - font-size 는 글자 크기, font-style 은 글자 스타일
+     
+     - font-weight 는 글자 굵기 (주로 700 사용 500 을 기준으로 굵기 조절) 
+     
+     - font 속성을 한 번에 지정할 경우 font [style | weight] font-size font-family 순으로 작성
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>font.html</title>
+  <!-- 링크는 ● 부분에 붙여넣기 하면됨 (e.g., <head> ● <style></style></head>) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <style>
+    .font{
+      font-family: "Black Han Sans", sans-serif;
+      font-size : 50px; font-weight: 500; font-style:italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="font">Hello, World!</div>
+</body>
+</html>

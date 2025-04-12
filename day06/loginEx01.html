@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body{ 
+      background-image: url("../../image/zibri_1.jpg"); 
+    
+      position: relative;
+      margin: 0;
+      height: 100vh;
+    }
+
+    .pBox{
+      width: 400px; height: 230px;
+      background-color: gray; opacity: 0.8;
+      border-radius: 10px;
+      
+      position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .idbox{
+      width : 300px; height : 30px;
+
+      border: none;
+      border-radius: 5px;
+
+      position: absolute;
+        top: 10%; left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .pwbox{
+      width : 300px; height : 30px;
+
+      border: none;
+      border-radius: 5px;
+
+      position: absolute;
+        top: 30%; left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .loginbut{
+      position: absolute;
+        top: 60%; left: 50%;
+        transform: translate(-50%, -0%);
+    }
+
+    .submit{
+      width: 310px; height: 30px;
+      
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(119, 240, 119);
+
+      color: whitesmoke;
+
+      cursor: pointer;
+    }
+
+    .pBox p{
+      position: absolute;
+        top: 70%; left: 50%;
+        transform: translate(-50%, -0%);
+
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+  <form action="">
+    <div class="pBox">
+      <div class="id">
+        <input type = "text" class = "idbox" placeholder="아이디">
+      </div>
+      <!--  -->
+      <div class="password">
+        <input type = "password" class = "pwbox" placeholder="비밀번호">
+      </div>
+      <!--  -->
+      <div class="loginbut">
+        <button type = "submit" class = "submit">로그인</button>
+      </div>
+      <!--  -->
+      <div class="message">
+        <a href="loginEx01_1.html" target="_blank"><p style="color: beige;">비밀번호를 잊어버리셨나요?</p></a>
+      </div>
+    </div>
+  </form>
+</body>
+</html>

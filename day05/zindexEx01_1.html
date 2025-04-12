@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .pBox{
+      width: 400px; height:500px;
+      border: 2px solid black;
+      margin: 0 auto;
+
+      position: relative;
+    }
+    
+    .square1, .square3{
+      width: 381px; height: calc(10%);
+      border: 3px solid black;
+
+      box-sizing: border-box;
+      
+      margin: 10px 10px 15px 10px;
+      
+      /* position: absolute; */
+      
+      text-align: center; line-height: 40px;
+
+      font-weight: 700; font-size: 20px;
+    }
+
+    .square2{
+      width: 381px; height: calc(70%);
+      border: 3px solid black;
+
+      box-sizing: border-box;
+
+      margin: 10px 10px 15px 10px;
+    }
+
+    .cbox1{
+      width : 100px; height: 100px;
+      background-color: red;
+      
+      position: absolute;
+        top: 35%;
+        left: 45%;
+        transform: translate(-90%, -50%);
+        z-index: 3;
+      
+      box-shadow: 10px 10px 10px gray;
+    }
+
+    .cbox2{
+      width : 100px; height: 100px;
+      background-color: green;
+      
+      position: absolute;
+        top: 45%;
+        left: 55%;
+        transform: translate(-80%, -40%);
+        z-index: 2;
+
+      box-shadow: 10px 10px 10px gray;
+    }
+
+    .cbox3{
+      width : 100px; height: 100px;
+      background-color: blue;
+      
+      position: absolute;
+        top: 55%;
+        left: 65%;
+        transform: translate(-60%, -30%);
+        z-index: 1;      
+      
+      box-shadow: 10px 10px 10px gray;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="pBox">
+    <div class="square1">텍스트</div>
+    <div class="square2">
+      <div class="cbox1"></div>
+      <div class="cbox2"></div>
+      <div class="cbox3"></div>
+    </div>
+    <div class="square3">텍스트</div>
+  </div>
+
+</body>
+</html>

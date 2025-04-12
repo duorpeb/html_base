@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin : 0; padding: 0;
+    }
+
+    .header{
+      height: 60px; 
+      background: #2f829e;
+      background: linear-gradient(90deg, rgba(47, 130, 158, 1) 0%, 
+      rgba(138, 209, 169, 1) 50%, rgba(179, 177, 127, 1) 100%);
+    }
+
+    .header p{ 
+      font-size: 25px;
+      color: white;
+
+      padding-top: 10px; padding-left: 20px;
+      margin: 0; 
+      text-align: left;
+    }
+
+    .main_img{
+      height:300px;
+      background-image: url("../../image/zibri_1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .message{
+      padding: 0; margin: 0;
+      background-color: beige;
+    }
+
+    .message p:nth-of-type(1){
+      padding-top: 25px; padding-left: 20px; 
+      
+      margin: 0;
+    }
+
+    .message>p:nth-of-type(2){
+      font-size: 20px; font-weight: 800;
+
+      padding-top: 30px; padding-left: 20px; 
+    }
+
+    .message>p:nth-of-type(3){
+      padding-left: 20px; margin: 0;
+
+      padding-bottom: 40px;
+    }
+
+  .subimg1{
+    height:500px;
+
+    background-image: url("../../image/zibri_2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .subimg2{
+    height: 250px;
+
+    background-image: url("../../image/zibri_3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    position: relative;
+  }
+
+  .subimg2 div:nth-of-type(1){
+    width: 200px; 
+    border: 3px solid white;
+
+    /* inline tag 에는 vertical-align: middle; 을 주면 가운데 정렬됨 
+       div 는 inline 태그가 아니라 적용이 안됨 
+    */
+    position: absolute;
+      top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .subimg2 p{
+    padding: 0; margin: 0;
+    font-size: 30px;  color: white;
+    
+    text-align: center;
+  }
+
+  .subimg3{
+    height: 250px;
+
+    background-image: url("../../image/zibri_4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  @media screen and (min-width: 800px) {
+    .header{ height: 60px; }
+      
+    .main_img{ height: 300px; }
+      
+    .subimg1{ width:50%; height: 500px; float:left; }
+      
+    .subimg2{ 
+      width : 50%; height: 250px; float: left;
+    }
+
+    .subimg3{
+      width : 50%; height: 250px; float: right; 
+    }
+
+    .subimg3::after{ clear: both; }
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    .header{ height: 60px; }
+      
+    .main_img{ width: 50%; height: 800px; float: left; }
+
+    .message{ width: 50%; height: 400px; float:left;}
+      
+    .subimg1{ width:25%; height: 400px; float:left; }
+      
+    .subimg2{ width : 25%; height: 200px; float: left; }
+
+    .subimg3{ width : 25%; height: 200px; float: right; }
+
+    .subimg3::after{ clear: both; }
+  }
+
+  </style>
+</head>
+
+<body>
+  <div class="header" id="top"><p>IN'0</p></div>
+  <div class="main_img"></div>
+  <div class="message">
+    <p>Portfolio</p>
+    <p>Make Hardware Soft</p>
+    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. 
+      Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also</p> 
+  </div>
+  <div class="subimg1"></div>
+
+  <div class="subimg2">
+    <!-- 가고자 하는 곳의 id 명을 href 에 적으면 됨  -->
+    <a href ="#top"><div class = subimg2_box1><p>View More</p></div></a>
+  </div>
+  <div class="subimg3"></div>
+</body>
+</html>

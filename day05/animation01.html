@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Animation
+     - Animation 은 규칙적인 움직임을 주고 싶은 경우 사용 
+
+     - Animation 등록은 @keyFrames 키워드를 사용
+
+     - Animation 의 시간 비율 내에서 어떻게 표현할 지 결정 
+      ㄴ 0 = from, 100 = to (from% ~ to%)
+    ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+     - Animation 생성 방법 
+     @keyframes 애니메이션 명{
+        시간 비율 { 스타일; }
+
+        시간 비율 { 스타일; }
+     }
+    ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+     - Animation 의 적용 방법
+      ㄴ animation-name : 동작할 애니메이션 이름
+      ㄴ animation-duration : 애니메이션 동작 시간 
+      ㄴ animation-iteration-count : 숫자 or 무한
+
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+  <style>
+    /* 등록만 해놓는 건 (함수 생성만 하는 느낌) */
+    @keyframes scaleFont {
+      from{ font-size: 20px; }
+
+      50%{ font-size: 50px; }
+
+      to{ font-size: 20px; }
+    }
+
+    .ani{
+      font-size: 20px; 
+      animation-name: scaleFont;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+  </style>
+</head>
+<body>
+  <span class = ani>Animation</span>
+</body>
+</html>

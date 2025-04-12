@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @keyframes translate { 
+      from{ transform: translate(0,0);}
+
+      50%{ transform: translate(50px,50px); }
+
+      to{ transform: translate(0,0); }
+    }
+
+    @keyframes scale { 
+      from{ transform: scale(1,1); }
+
+      50%{ transform: scale(2,2); }
+
+      to{ transform: scale(1,1); }
+    }
+
+    @keyframes rotate { 
+      from{ rotate: (0deg); }
+
+      50%{ rotate: (180deg); }
+
+      to{ rotate: (0deg); }
+    }
+
+    @keyframes skew { 
+      from{ transform: (0deg,0deg); }
+
+      50%{ transform: (20deg,20deg); }
+
+      to{ transform: (0deg,0deg); }
+    }
+
+    .box1{
+      width: 200px; height: 50px; background-color: rgb(255, 255, 131);
+      /* animation: translate 3s 3; */
+    }
+
+    .font{
+      font-size: 20px; transition: font-size 2s;
+    }
+
+    .font:hover{
+      font-size: 50px
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="font">transition</div>
+</body>
+</html>

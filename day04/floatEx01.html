@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .lBox{
+      height: 100px;
+      border: 2px solid black;
+
+      position: relative;
+    }
+
+    .lBox::after{
+      content: "" ; clear: both; display: block;
+    }
+
+    .box1{
+      width: calc(100% / 4); height: 100px;
+      
+      border: 1px solid black;
+      box-sizing: border-box;
+      
+      text-align: center; line-height: 100px;
+
+      float: left;
+        left : 0;
+    }
+
+    .box1:hover{
+      background-color: yellow;
+    }
+
+
+    
+  </style>
+</head>
+<body>
+  <div class="lBox">
+    <div class="box1">메뉴1</div>
+    <div class="box1">메뉴2</div>
+    <div class="box1">메뉴3</div>
+    <div class="box1">메뉴4</div>
+  </div>
+
+</body>
+</html>

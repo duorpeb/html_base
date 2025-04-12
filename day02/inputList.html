@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>day02</title>
+</head>
+<!-- list 의 유형은 순서가 있는 리스트, 순서가 없는 리스트, 
+     설명/정의 리스트로 총 3가지 가 존재 
+
+     - list 는 중첩하여 사용이 가능하고 li*n 으로 n 만큼의 list 생성 가능 
+
+     - 순서가 있는 리스트는 <ol> / <li> 
+      ㄴ 순번이 있으며 type 으로 결정하고 start 시작값을 지정 
+    ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+     - 순서가 없는 리스트는 <ul> / <li>
+      ㄴ 모양으로 구분하며 상/하위를 구분할 때, 이 태그를 사용 (e.g.,메뉴바)
+    ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+     - 설명/정의 리스트는 <dl>, <dt> / <li>
+-->
+<body>
+  <!-- <ol> -->
+  <ol>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+  </ol>
+
+  <!-- <ul> -->
+  <ul>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+  </ul>
+
+  <ul>
+    <li>
+      <ol>
+        <li>ㄱ</li>
+        <li>ㄴ</li>
+        <li>ㄷ</li>
+      </ol>
+    </li>
+    <li>B</li>
+    <li>C</li>
+  </ul>
+
+  <!-- dt, dd -->
+  <dl>
+    <dt> 정의 1 (title) </dt>
+    <dd> 정의 1의 설명…</dd>
+    <dt> 정의 2 (title) </dt>
+    <dd> 정의 2의 설명…</dd>
+    <dt> 정의 3 (title) </dt>
+    <dd> 정의 3의 설명…</dd>
+  </dl>
+
+  <!-- list 의 중첩 사용 -->
+  <ul>
+    <li>HTML</li>
+    <li>
+      <ol>
+        <li>HTML Element</li>
+        <li>Attribute</li>
+        <li>link, img, list, ...</li>
+      </ol>
+    </li>
+    <li>CSS</li>
+    <ol>
+      <li>Selector</li>
+      <li>Layout</li>
+      <li>Color</li>
+    </ol>
+    <li>JS</li>
+    <dl>
+      <dt>Java 와 비슷</dt>
+      <dd>Java 처럼 구문을 활용하여 화면을 동적 제어</dd>
+    </dl>
+  </ul>
+</body>
+</html>

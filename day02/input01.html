@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>day02</title>
+</head>
+<body>
+  <!-- input type 의 유형  -->
+  <form action = "" method="get">
+    <input type = "text" name = "name" placeholder="이름"><br>
+    <input type = "text" name = "age" placeholder="나이"><br>
+    <input type = "text" name = "password" placeholder="비밀번호"><br>
+    <input type = "text" name = "button" placeholder="button"><br>
+    <input type = "text" name = "submit" placeholder="submit"><br>
+    <input type = "text" name = "reset" placeholder="reset"><br>
+  </form>
+  <hr>
+  <input type = > <br> <hr>
+
+  <!-- checkbox 는 다중 선택을 할 때 사용 -->
+  <input type = "checkbox"> A
+  <input type = "checkbox"> B
+  <input type = "checkbox"> C <br><hr>
+  
+  <!-- name 이 같은 것들은 배열  -->
+  <form action ="" method="get">
+    <input type = "checkbox" name = "Alphabet" value = "A"> A 
+    <input type = "checkbox" name = "Alphabet" value = "B"> B
+    <input type = "checkbox" name = "Alphabet" value = "C"> C
+    <input type = "submit" value = "submit">
+  </form>
+
+  <!-- label : 다른 태그의 제목 역할을 하는 태그  
+       - for = "값1" id = "값2" 에서 값1과 값2이 같다면 해당 id 의 제목이 됨
+
+       - id 는 유일한 구분자로 값이 중복되어서는 안됨 
+       
+       - class 구분자는 중복 가능한 구분자로 여러 개 가능 (JS,CSS 에서 주로 사용)
+  -->
+  <form action ="" method="get">
+    <label for = "char1">
+    <input type = "checkbox" name = "Alphabet1" value = "A" id = char1> A </label>
+    <label for = "char2"> <input type = "checkbox" name = "Alphabet1" value = "B" id = char2> B </label>
+    <input type = "checkbox" name = "Alphabet1" value = "C" id = char3> <label for = "char3"> C </label> 
+    <input type = "submit" value = "submit">
+  </form>
+  
+  <!-- radio : name 이 같은 값 중 하나만 선택 가능 
+       - checked 는 radio, checkbox 에 사용할 수 있으며 사용 시 기본으로 체크되는 옵션 
+       
+       - checked = "" 는 checked = "true" 와 같은 의미 -->
+  <form>
+    <input type = "radio" name = "Alphabet2" value = "D" checked = "true"> D  
+    <input type = "radio" name = "Alphabet2" value = "E"> E 
+  </form>
+
+  <!-- 예제 (1) : for, label, radio button 을 이용해 
+  10대, 20대, 30대, 40대 이상 중 하나를 선택할 수 있는 값을 생성  -->
+  <form action="">
+    <label for = "10"> <input type = "radio" name = "age" id = "10" value = "10대"> 10대 </label>
+    <label for = "20"> </label><input type = "radio" name = "age" id = "20" value = "20대"> 20대 </label>
+    <label for = "30"></label><input type = "radio" name = "age" id = "30" value = "30대"> 30대 </label>
+    <label for = "40"></label><input type = "radio" name = "age" id = "40" value = "40대"> 40대 </label>
+    <input type = "submit" value = "submit">
+  </form>
+</body>
+</html>

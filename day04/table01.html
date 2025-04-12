@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 성적표 테이블 생성 -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table.html</title>
+  <style>
+    .tb1{
+      width: 70%; height: 30%;
+      
+      /* table 선을 한줄로 만들기 */
+      border-collapse: collapse;
+
+      border-style: none;
+      border-left: none; border-right: none;
+
+      text-align: center;
+    }
+
+    .tb1 th{
+      border: 4px solid orange;
+      background-color: beige;
+      border-left: none; border-right: none;
+    }
+
+    .tb1 td, .tb1 tr{
+      width: 100px; height: 50px;
+      border: 2px solid black;
+      border-left: none; border-right: none;
+    }
+
+    .tb1 tr:nth-child(2n){
+      background-color: burlywood;
+    }
+
+    .tb1 tr:hover{
+      background-color: rgb(238, 115, 115);
+    }
+
+    #tf1{
+      border-top: 4px solid orange;
+      border-bottom: 4px solid orange;
+      text-align: left; 
+    }
+
+    #tf1 p{ padding-left: 110px; }
+  </style>
+</head>
+
+<body>
+  <table class = "tb1">
+    <thead>
+      <th>번호</th>
+      <th>이름</th>
+      <th>성적</th>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Kim</td>
+        <td>87</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Son</td>
+        <td>77</td>
+      </tr>
+      
+      <tr>
+        <td>3</td>
+        <td>Park</td>
+        <td>13</td>
+      </tr>
+      
+      <tr>
+        <td>4</td>
+        <td>Lee</td>
+        <td>95</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>Yang</td>
+        <td>81</td>
+      </tr>
+    </tbody>
+
+    <tfoot id = "tf1">
+      <tr>
+        <td colspan="2"><p>합계</p></td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

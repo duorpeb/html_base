@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>day03</title>
+  <!-- Style File 을 Link 로 연결하며 여러 개 연결 가능 -->
+  <link rel = "stylesheet" href= "style.css">
+  <style>
+    /* 여기는 CSS 영역 
+        - 선택자 { 속성:값; 속성:값;}
+    */
+    img{ height : 100px; }
+  </style>
+</head>
+<!-- Style 은 HTML 의 정렬, 크기, 색 등 여러가지 모양을 꾸며주는 기능 
+     Style 적용 방법은 아래와 같음 
+     
+     - 1) <style> 태그를 사용하는 방법 -> <head> 태그 내부에 선언 
+     - 2) 각 태그에 style 속성을 직접 적용하는 방법 
+     - 3) link 를 이용하여 이미 만들어져 있는 css 파일을 연결하는 방법 (가장 많이 사용하는 방법)
+     
+     - 방법 3) 은 일반 실무에서 가장 많이 사용하는 방법으로 <head> 태그 안에서 <link> 태그로 연결 
+
+     - 수업 시에는 1과 3을 번갈아가며 사용하고 2번은 거의 사용 X 
+
+     - Style 의 같은 선택자는 같은 Style 을 가짐 
+-->
+<body>
+  <p><img src = "../../image/새끼진돗개.jpg" alt = "강아지 그림"></p>
+  <!-- style.css 에서 #input1 {} 의 요소가 적용됨  -->
+  <input type = "text" id = "input1">
+</body>
+</html>

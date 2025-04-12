@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>day02</title>
+</head>
+<!-- <table> 은 표를 나타내는 태그 (표 전체 박스)
+
+      - tr 은 행 (한 행), th/td 는 열 (한 열)
+        ㄴ th 는 제목열 (굵은 글씨로 가운데 정렬), td 는 일반열 (일반 글씨로 왼쪽 정렬) 
+
+        ㄴ table 의 기본형식은
+          <table>
+            <thead><tr><th>...</th></tr></thead>
+            <tbody><tr><td></td></tr></tbody>
+            <tfoot><tr><td></td></tr></tfoot>
+          </table> 
+      ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+      - 3행 4열 테이블 생성 시 아래와 같이 생성
+        ㄴ <table>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+           </table>
+      ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+      - Table 은 CSS 에서 모양, 색, 선, 크기 등을 지정하지만 HTML 에서도 몇 가지 지정 가능 
+        ㄴ border (테두리 두께), width, colspan(컬럼 병합), rowspan(행 병합)
+
+        ㄴ 병합은 HTML 에서만 가능하며 병합된 셀은 지워주어야 함 (병합된 열/행을 주석처리) 
+           → rowspan : <td rowspan="병합할 행 수">내용</td>
+
+
+
+        ㄴ thead, tbody, tfoot 은 HTML 5 형식의 시멘틱 태그
+-->
+<body>
+  <table border = "1" width = "800" height = "300">
+    <!-- 제목 -->
+    <caption>제목</caption>
+    <thead>
+      <tr>
+        <th>제목1</th>
+        <th>제목2</th>
+        <th>제목3</th>
+        <th>제목4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td  rowspan = "2">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <!-- <td>5</td> -->
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+      </tr>
+    </tbody>
+    
+    <tfoot>
+      <tr>
+        <td>foot1</td>
+        <td>foot2</td>
+        <td colspan = "2">foot3</td>
+        <!-- <td>foot4</td> -->
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

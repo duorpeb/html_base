@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      height: 100px; 
+      float : left;
+    }
+
+    .w100{
+      width: 100%;
+
+    }
+
+    .w50{ 
+      width: 50%; 
+    }
+
+    .w25{
+      width: 25%;
+    }
+
+    body>div:nth-of-type(1){ background-color: red; }
+    body>div:nth-of-type(2){ background-color: green; }
+    body>div:nth-of-type(3){ background-color: blue; }
+    body>div:nth-of-type(4){ background-color: black; }
+    body>div:nth-of-type(5){ background-color: aqua }
+    body>div:nth-of-type(6){ background-color: orange; }
+    body>div:nth-of-type(7){ background-color: rgb(219, 132, 161); }
+  </style>
+</head>
+<body>
+  <div class = "w100"></div>
+  <div class = "w25"></div>
+  <div class = "w50"></div>
+  <div class = "w25"></div>
+  <div class = "w50"></div>
+  <div class = "w50"></div>
+  <div class = "w100"></div>
+</body>
+</html>

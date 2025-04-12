@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box1{
+      position: relative;
+    }
+
+    .pbox::after{
+      content: "" ; clear: both; display: block;
+    }
+
+    .box1{
+      width:100px; height: 100px; background-color: blanchedalmond;
+      margin: 10px;
+
+      text-align: center;
+
+      float : left; 
+    }
+
+    .box1:hover{
+      /* z-index: -10px; */
+      transform: scale(0.95);
+      filter: brightness(0.9);
+
+      box-shadow: 10px 10px 10px gray;
+    }
+
+    /* .box1::after{
+      content: ""; clear: both; display: block;   
+    } */
+
+    .box2{
+      width:100px; height: 100px; background-color: blanchedalmond;
+      margin: 10px;
+
+      text-align: center;
+
+      float :left;
+    }
+
+    .box2:hover{
+      /* z-index: -0px; */
+      transform: scale(0.95);
+      filter: brightness(0.9);
+
+      box-shadow: 10px 10px 10px gray;
+    }
+
+    .box3{
+      width:100px; height: 100px; background-color: blanchedalmond;
+      margin: 10px;
+
+      text-align: center;
+
+      float :left;
+    }
+
+    .box3:hover{
+      /* z-index: -10px; */
+      transform: scale(0.95);
+      filter: brightness(0.9);
+
+      box-shadow: 10px 10px 10px gray;
+    }
+
+    .box4{
+      width:100px; height: 100px; background-color: blanchedalmond;
+      margin: 10px;
+
+      text-align: center;
+
+      float :left;
+    }
+
+    .box4:hover{
+      /* z-index: -10px; */
+      transform: scale(0.95);
+      filter: brightness(0.9);
+
+      box-shadow: 10px 10px 10px gray;
+    }
+
+    .box5{
+      width:100px; height: 100px; background-color: blanchedalmond;
+      margin: 10px;
+
+      text-align: center;
+
+      float :left;
+    }
+
+    .box5:hover{
+      /* z-index: -10px; */
+      transform: scale(0.95);
+      filter: brightness(0.9);
+
+      box-shadow: 10px 10px 10px gray;
+    }
+
+    .box6{
+      width:100px; height: 100px; background-color: blanchedalmond;
+      margin: 10px;
+
+      text-align: center;
+
+      float :left;
+    }
+
+    .box6:hover{
+      /* z-index: -10px; */
+      transform: scale(0.95);
+      filter: brightness(0.9);
+      
+      box-shadow: 10px 10px 10px gray;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="pbox">
+    <div class="box1">T</div>
+    <div class="box2">H</div>
+    <div class="box3">A</div>
+    <div class="box4">N</div>
+    <div class="box5">K</div>
+    <div class="box6">S</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 성적표 테이블 생성 -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table.html</title>
+  <style>
+    .tb1{
+      width: 700px; height: 30%;
+      
+      /* table 선을 한줄로 만들기 */
+      border-collapse: collapse;
+
+      border-style: none;
+      border-left: none; border-right: none;
+
+      text-align: center;
+    }
+
+    .tb1 th{
+      border: 4px solid orange;
+      background-color: beige;
+      border-left: none; border-right: none;
+    }
+
+    .tb1 td, .tb1 tr{
+      width: 100px; height: 50px;
+      border: none;
+    }
+
+    .tb1 tr:nth-child(2n){
+      background-color: burlywood;
+    }
+
+    .tb1 tr:hover{
+      background-color: rgb(238, 115, 115);
+    }
+
+    .textbox{
+      width: 400px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <table class = "tb1">
+    <thead>
+      <th>번호</th>
+      <th colspan="2"><p>제목</p></th>
+      <th>작성자</th>
+      <th>날짜</th>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td colspan="2"><p class = "textbox">ABCDEFGHIJKLMNOPQRSTUVWXYZOPQRSTUVWXYOPQRSTUVWXYZZ</p></td>
+        <td>Son</td>
+        <td>2025-04-09</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td colspan="2"><p class = "textbox">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p></td>
+        <td>Son</td>
+        <td>2025-04-09</td>
+      </tr>
+      
+      <tr>
+        <td>3</td>
+        <td colspan="2"><p class = "textbox">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p></td>
+
+        <td>Son</td>
+        <td>2025-04-09</td>
+      </tr>
+      
+      <tr>
+        <td>4</td>
+        <td colspan="2"><p class = "textbox">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p></td>
+
+        <td>Son</td>
+        <td>2025-04-09</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td colspan="2"><p class = "textbox">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p></td>
+
+        <td>Son</td>
+        <td>2025-04-09</td>
+      </tr>
+    </tbody>
+
+    <tfoot id = "tf1">
+    </tfoot>
+  </table>
+</body>
+</html>

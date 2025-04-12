@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>day02</title>
+</head>
+<body>
+  <!-- ▶ <a> 태그는 다른 페이지로 이동하는 태그로 태그 안의 글자를 클릭하면 이동  
+    
+        - href 에는 이동할 url 을 작성, href 값이 없으면 현재 페이지에서 새로고침 
+
+        - 속성값이 http:// url 로 인식, 없으면 파일로 인식하여 내 파일에서 검색 
+
+        - tel 은 모바일에서 주로 사용하는 속성으로 전화번호로 연결 
+
+        - mailto 은 Email (Window 의 Hotmail) 로 연결 
+
+        - target 속성의 값으로 _self, _blank, _parent, _top 이 있으며 
+          target 의 기본값은 _self 
+          
+          ㄴ _self 는 현재 화면에서 링크를 새로 연결
+
+          ㄴ _blank 는 새 창에서 링크를 연결 
+
+          ㄴ _parent 는 결제창처럼 팝업창이 뜨고 (자식창) 팝업에 대한 값을 반영하여 
+             원래창이 (부모창) 에서 변경되는 경우 사용  
+
+          ㄴ _top 최고 조상에서 링크를 연결 (다중팝업이 뜰 경우 메인창에서 값을 연결할 경우 사용)
+             (부모와 조상이 없는 경우 _self 와 동일)
+        ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+        - Download 속성 
+          ㄴ 파일을 다운로드 할 경우 사용하며 href 에 파일경로가 있고 속성이 download 인 경우 
+             해당 파일을 다운로드
+  -->
+  <form action="">
+    <a href = "http://www.naver.com" >Naver</a><br>
+    <a href = "http://www.google.com" target = "_blank">Google</a>
+  </form>
+
+  <!-- HTML 파일로 인식 (http:// 가 없으면 File 로 인식하고 파일이 없으면 Err 발생)-->
+  <a href = "inputSelect.html" target="_blank" >성별 선택</a><br>
+  <a href = "inputSelect.html" download="" >성별 선택 Download</a><br>
+
+  <!-- 전화로 연결 (주로 모바일에서 사용)-->
+  <a href = "tel : +8201029397920">전화로 연결</a><br>
+
+  <!-- Mail 로 연결 -->
+  <a href = "mailto:p22kk1@naver.com">Mail 로 연결</a>
+</body>
+</html>
